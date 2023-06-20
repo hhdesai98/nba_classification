@@ -30,6 +30,12 @@ The code and notebooks associated with this section can be found in the Data_Scr
 
 ### Results
 
+| Model               | Accuracy            | Precision           | Recall              | F-1 Score           | ROC-AUC             |
+|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
+| Logistic Regression | 0.9469              | 0.8230              | 0.7561              | 0.7881              | 0.9732              |
+| Random Forest       | 0.9406              | 0.8018              | 0.7236              | 0.7607              | 0.9720              |
+| XGBoost             | 0.9469              | 0.8017              | 0.7886              | 0.7951              | 0.9767              |
+| Ensemble            | 0.9469              | 0.8174              | 0.7642              | 0.7899              | 0.9778              |
 
 
 
