@@ -54,4 +54,10 @@ We have for our Full Model results (using all the positions as training data) as
 | Ensemble             | 0.9462                 | 0.7917                 | 0.7917                 | 0.7917                 | 0.9755                  |
 
 
+### Discussion 
+
+We see here that across almost every metric, the aggregated model (combing the 3 positional models), outperforms the larger model. This confirms my theory that different All-NBA positions have slightly different criteria. We saw overall that advanced statistics like VORP and PER were some of the most impactful features across almost all the models, indicating that they are some of the statistics that may come into consideration when voting for these players. 
+
+For future work, I'd like to add sentiment analysis to these models. That is primarily because these players are voted on by media members to recieve these awards, making it a subjective criteria. Creating a sentiment analysis across data such as articles or tweets would help reveal the opinions of these pundits throughout the season and their view of these players. 
+
 
