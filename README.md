@@ -6,7 +6,7 @@ In this project I aim to create a classifier to predict whether a given NBA play
 
 ### Methods
 
-I will be fitting 3 main models for this classification task: Logistic Regression, Random Forests, and XGboost. 
+I will be fitting 4 main models for this classification task: Logistic Regression, Random Forests, XGboost, and an ensemble Voting classifier using the prior 3 models. I will fit the models first disregarding the positions, and then I will fit each model on only players from the 3 positions (G, F, C). I will compare the results of running 1 larger model vs the combined results of 3 smaller models. 
 
 ### Data Sourcing
 
@@ -24,21 +24,34 @@ The code and notebooks associated with this section can be found in the Data_Scr
 
 ### Training and Test Split
 
-I utilized an 80/20 training-test split in order to evaluate the performance of my models.
+For my test set I randomly selected 9 seasons rom the training data. I selected full seasons in order to evaluate what All-NBA teams may look like in their entirety.
 
 The code and notebooks associated with this section can be found in the Data_Scripting_Cleaning folder, specifically in `data_cleaning_test_train.ipynb` 
 
 ### Results
 
-| Model               | Accuracy            | Precision           | Recall              | F-1 Score           | ROC-AUC             |
-|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
-| Logistic Regression | 0.9469              | 0.8230              | 0.7561              | 0.7881              | 0.9732              |
-| Random Forest       | 0.9406              | 0.8018              | 0.7236              | 0.7607              | 0.9720              |
-| XGBoost             | 0.9469              | 0.8017              | 0.7886              | 0.7951              | 0.9767              |
-| Ensemble            | 0.9469              | 0.8174              | 0.7642              | 0.7899              | 0.9778              |
+We have for our Aggregrated Model results (combining 3 positional models):
+
+#### Aggregated Model Results
+
+| Model                | Accuracy               | Precision              | Recall                 | F-1 Score              | ROC-AUC                 |
+| -------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------- |
+| Logistic Regression  | 0.9548                 | 0.825                  | 0.825                  | 0.825                  | 0.9893                  |
+| Random Forest        | 0.9483                 | 0.800                  | 0.800                  | 0.800                  | 0.9875                  |
+| XGBoost              | 0.9483                 | 0.800                  | 0.800                  | 0.800                  | 0.9858                  |
+| Ensemble             | 0.9569                 | 0.8333                 | 0.8333                 | 0.8333                 | 0.9926                  |
 
 
+We have for our Full Model results (using all the positions as training data) as:
 
+#### Full Data Results
+
+| Model                | Accuracy               | Precision              | Recall                 | F-1 Score              | ROC-AUC                 |
+| -------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------- |
+| Logistic Regression  | 0.9548                 | 0.825                  | 0.825                  | 0.825                  | 0.9751                  |
+| Random Forest        | 0.9419                 | 0.775                  | 0.775                  | 0.775                  | 0.9729                  |
+| XGBoost              | 0.9440                 | 0.7833                 | 0.7833                 | 0.7833                 | 0.9739                  |
+| Ensemble             | 0.9462                 | 0.7917                 | 0.7917                 | 0.7917                 | 0.9755                  |
 
 
 
