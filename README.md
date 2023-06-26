@@ -38,10 +38,10 @@ We have for our Aggregrated Model results (combining 3 positional models):
 
 | Model                | Accuracy               | Precision              | Recall                 | F-1 Score              | ROC-AUC                 |
 | -------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------- |
-| Logistic Regression  | 0.9548                 | 0.825                  | 0.825                  | 0.825                  | 0.9893                  |
-| Random Forest        | 0.9483                 | 0.800                  | 0.800                  | 0.800                  | 0.9875                  |
-| XGBoost              | 0.9483                 | 0.800                  | 0.800                  | 0.800                  | 0.9858                  |
-| Ensemble             | 0.9569                 | 0.8333                 | 0.8333                 | 0.8333                 | 0.9926                  |
+| Logistic Regression  | 0.9591                 | 0.8417                 | 0.8417                 | 0.8417                 | 0.9898                  |
+| Random Forest        | 0.9483                 | 0.8000                 | 0.8000                 | 0.8000                 | 0.9875                  |
+| XGBoost              | 0.9483                 | 0.8000                 | 0.8000                 | 0.8000                 | 0.9858                  |
+| Ensemble             | 0.9548                 | 0.8250                 | 0.8250                 | 0.8250                 | 0.9929                  |
 
 
 We have for our Full Model results (using all the positions as training data) as:
@@ -58,7 +58,7 @@ We have for our Full Model results (using all the positions as training data) as
 
 ### Discussion 
 
-We see here that across almost every metric, the aggregated model (combing the 3 positional models), outperforms the larger model. This confirms my theory that different All-NBA positions have slightly different criteria. We saw overall that advanced statistics like VORP and PER were some of the most impactful features across almost all the models, indicating that they are some of the statistics that may come into consideration when voting for these players. 
+We see here that across almost every metric, the aggregated model (combing the 3 positional models), outperforms the larger model. This confirms my theory that different All-NBA positions have slightly different criteria. We saw overall that advanced statistics like VORP and PER were some of the most impactful features across almost all the models, indicating that they are some of the statistics that may come into consideration when voting for these players. Of the models in general, it seems logistic regression had the strongest predictive performance.
 
 For future work, I'd like to add sentiment analysis to these models. That is primarily because these players are voted on by media members to recieve these awards, making it a subjective criteria. Creating a sentiment analysis across data such as articles or tweets would help reveal the opinions of these pundits throughout the season and their view of these players. 
 
