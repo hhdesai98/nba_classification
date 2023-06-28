@@ -36,25 +36,23 @@ We have for our Aggregrated Model results (combining 3 positional models):
 
 #### Aggregated Model Results
 
-| Model                | Accuracy               | Precision              | Recall                 | F-1 Score              | ROC-AUC                 |
-| -------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------- |
-| Logistic Regression  | 0.9591                 | 0.8417                 | 0.8417                 | 0.8417                 | 0.9898                  |
-| Random Forest        | 0.9483                 | 0.8000                 | 0.8000                 | 0.8000                 | 0.9875                  |
-| XGBoost              | 0.9483                 | 0.8000                 | 0.8000                 | 0.8000                 | 0.9858                  |
-| Ensemble             | 0.9548                 | 0.8250                 | 0.8250                 | 0.8250                 | 0.9929                  |
-
+| Model                | Accuracy  | Precision | Recall    | F-1 Score | ROC-AUC   |
+|----------------------|-----------|-----------|-----------|-----------|-----------|
+| Logistic Regression  | 0.9569    | 0.8333    | 0.8333    | 0.8333    | 0.9907    |
+| Random Forest        | 0.9505    | 0.8083    | 0.8083    | 0.8083    | 0.9880    |
+| XGBoost              | 0.9505    | 0.8083    | 0.8083    | 0.8083    | 0.9821    |
+| Ensemble             | 0.9505    | 0.8083    | 0.8083    | 0.8083    | 0.9937    |
 
 We have for our Full Model results (using all the positions as training data) as:
 
 #### Full Data Results
 
-| Model                | Accuracy               | Precision              | Recall                 | F-1 Score              | ROC-AUC                 |
-| -------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------- |
-| Logistic Regression  | 0.9548                 | 0.825                  | 0.825                  | 0.825                  | 0.9751                  |
-| Random Forest        | 0.9419                 | 0.775                  | 0.775                  | 0.775                  | 0.9729                  |
-| XGBoost              | 0.9440                 | 0.7833                 | 0.7833                 | 0.7833                 | 0.9739                  |
-| Ensemble             | 0.9462                 | 0.7917                 | 0.7917                 | 0.7917                 | 0.9755                  |
-
+| Model                | Accuracy  | Precision | Recall    | F-1 Score | ROC-AUC   |
+|----------------------|-----------|-----------|-----------|-----------|-----------|
+| Logistic Regression  | 0.9569    | 0.8333    | 0.8333    | 0.8333    | 0.9754    |
+| Random Forest        | 0.9440    | 0.7833    | 0.7833    | 0.7833    | 0.9729    |
+| XGBoost              | 0.9483    | 0.8000    | 0.8000    | 0.8000    | 0.9758    |
+| Ensemble             | 0.9483    | 0.8000    | 0.8000    | 0.8000    | 0.9747    |
 
 ### Discussion 
 

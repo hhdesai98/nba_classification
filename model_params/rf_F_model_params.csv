@@ -1,0 +1,7 @@
+,0
+classifier__class_weight,balanced
+classifier__max_depth,15
+classifier__max_features,0.4
+classifier__min_samples_leaf,10
+classifier__min_samples_split,25
+classifier__n_estimators,200
