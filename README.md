@@ -6,7 +6,7 @@ In this project I aim to create a classifier to predict whether a given NBA play
 
 ### Methods
 
-I will be fitting 4 main models for this classification task: Logistic Regression, Random Forests, XGboost, and an ensemble Voting classifier using the prior 3 models. I will fit the models first disregarding the positions, and then I will fit each model on only players from the 3 positions (G, F, C). I will compare the results of running 1 larger model vs the combined results of 3 smaller models. 
+I will be fitting 4 main models for this classification task: Logistic Regression, Random Forests, XGboost, and an ensemble Voting classifier using the prior 3 models. I will fit the models first disregarding the positions, and then I will fit each model on 3 different datasets based on positions (G, F, C). I will compare the results of running 1 larger model vs the combined results of 3 smaller models. 
 
 ### Data Sourcing
 
