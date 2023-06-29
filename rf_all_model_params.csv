@@ -1,7 +1,0 @@
-,0
-classifier__class_weight,balanced
-classifier__max_depth,50
-classifier__max_features,sqrt
-classifier__min_samples_leaf,2
-classifier__min_samples_split,2
-classifier__n_estimators,1000
