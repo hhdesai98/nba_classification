@@ -34,7 +34,7 @@ The code and notebooks associated with this section can be found in the Data_Scr
 
 We have for our Aggregrated Model results (combining 3 positional models):
 
-#### Aggregated Model Results
+#### Aggregated Model Test Results
 
 | Model                | Accuracy  | Precision | Recall    | F-1 Score | ROC-AUC   |
 |----------------------|-----------|-----------|-----------|-----------|-----------|
@@ -45,7 +45,7 @@ We have for our Aggregrated Model results (combining 3 positional models):
 
 We have for our Full Model results (using all the positions as training data) as:
 
-#### Full Data Results
+#### Full Data Test Results
 
 | Model                | Accuracy  | Precision | Recall    | F-1 Score | ROC-AUC   |
 |----------------------|-----------|-----------|-----------|-----------|-----------|
